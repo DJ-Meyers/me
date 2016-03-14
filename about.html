@@ -16,12 +16,18 @@
 .jumbotron{
     color: orange;
 }
+:target {
+   background-color: #ffa;
+}
 .icon{
     margin: 3px;
     color: #0dd5b2;
 }
 .navbar {
     background-color: #0dd5b2;
+}
+.right{
+  text-align: right;
 }
 .nav-link{
   color: white;
@@ -50,6 +56,7 @@ h1 {
   bottom: 0;
   width: 100%;
 }
+
 .topic{
   font-weight: 900;
 }
@@ -70,7 +77,7 @@ div > .description{
   padding: 2px;
 }
 .panel-group{
-  width: 80%;
+  width: 100%;
   margin: 0px;
 }
 .center-me{
@@ -99,8 +106,8 @@ div > .description{
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="about.html">About</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="#">Hire Me!</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hire-me.html">Hire Me</a></li>
         </ul>
       </div>
     </div>
@@ -119,14 +126,11 @@ div > .description{
         </div>
         <div class="description row">
           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <i class="fa fa-university icon fa-2x"></i> <span class="school">University of Florida - Computer Science &amp; Russian Studies</span>
+            <p class="center-me"><i class="fa fa-university icon fa-2x"></i> <span class="school">University of Florida - Computer Science &amp; Russian Studies</span></p>
             <div class="description">
-              Gainesville, FL
-            <br>
-              Expected Graduation Date - May 2017
-              <br>
-              GPA - 3.76/4.0
-              <br>
+              <p>Gainesville, FL</p>
+              <p>Expected Graduation Date - May 2017</p>
+              <p>GPA - 3.76/4.0</p>
               <div class="panel-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
@@ -180,11 +184,11 @@ div > .description{
             <br>
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <i class="fa fa-graduation-cap icon fa-2x"></i> <span class="school">A.W. Dreyfoos School of the Arts - Communications</span><br>
+          <p class="center-me"><i class="fa fa-graduation-cap icon fa-2x"></i> <span class="school">A.W. Dreyfoos School of the Arts - Communications</span><br></p>
           <div class="description">
-            <span class="course">West Palm Beach, FL</span><br>
-            <span class="course">Graduation Date - May 2012</span><br>
-            <span class="course">GPA - 3.96/4.0 (Unweighted)</span><br>
+            <p>West Palm Beach, FL</span><br>
+            <p>Graduation Date - May 2012</span><br>
+            <p>GPA - 3.96/4.0 (Unweighted)</span><br>
             <div class="panel-group">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -215,7 +219,7 @@ div > .description{
               <div>
                 <p class="center-me"><span class="topic">C++</span></p>
                 <div class="description">
-                  <p>C++ is my strongest language.  It was the primary language used in my Programming Fundamentals 2 course as well as in Data Structures &amp; Algorithms.  I used C++ to create my <a href="#">College Football Ranking</a> as well as to practice data structures.<p>
+                  <p>C++ is my strongest language.  It was the primary language used in my Programming Fundamentals 2 course as well as in Data Structures &amp; Algorithms.  I used C++ to create my <a href="projects.html#ranking">College Football Ranking</a> as well as to practice data structures.<p>
                 </div>
                 <p class="center-me"><span class="topic">Java</span></p>
                 <div class="description">
@@ -223,11 +227,11 @@ div > .description{
                 </div>
                 <p class="center-me"><span class="topic">Web Dev</span></p>
                 <div class="description">
-                  <p>I'm currently learning about several web development technologies through my Software Engineering and Web App Development courses.  The technologies I've used are HTML, CSS, Bootstrap as well as some Javascript.  This website was made entirely by me using these technologies!</p>
+                  <p>I'm currently learning about several web development technologies through my Software Engineering and Web App Development courses.  The technologies I've used are HTML, CSS, Bootstrap as well as some Javascript.  <a href="projects.html#website">This website</a> was made entirely by me using these technologies!</p>
                 </div>
                 <p class="center-me"><span class="topic">SQL</span></p>
                 <div class="description">
-                  <p>I'm familiar with mySQL and SQLPlus.  I learned about these technologies through my Databases class.  I'm currently working on creating a <a href="#">College Football Play-by-Play Database</a>.</p>
+                  <p>I'm familiar with mySQL and SQLPlus.  I learned about these technologies through my Databases class.  I'm currently working on creating a <a href="projects.html#database">College Football Play-by-Play Database</a>.</p>
                 </div>
                 <p class="center-me"><span class="topic">Python</span></p>
                 <div class="description">
