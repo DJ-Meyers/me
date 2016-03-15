@@ -1,0 +1,117 @@
+/*General*/
+* {
+  font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    background-color: #0dd5b2;
+}
+h1 {
+  text-align: center;
+}
+.icon{
+    margin: 3px;
+    color: #0dd5b2;
+}
+.right{
+  text-align: right;
+}
+.center-me{
+  text-align: center;
+}
+div > .description{
+  margin: 0 20px 0 20px;
+  padding: 0;
+}
+.description{
+  text-align: left;
+}
+p{
+  font-size: 12pt;
+  text-align: left;
+}
+.footer{
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.not-footer{
+  min-height: 93vh;
+}
+.footcontainer{
+  border-top: 1px solid black;
+}
+.chevron{
+  position:absolute;
+  top: 50%;
+}
+/*Specific to index*/
+.bio{
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.russian {
+  font-family: 'Lobster', cursive;
+  font-size: 8.5vmin;
+}
+.selfie{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+/*Specific to about*/
+:target {
+   background-color: #ffa;
+}
+.topic{
+  font-weight: 900;
+}
+.list-group-item{
+  padding: 2px;
+}
+.panel-group{
+  width: 100%;
+  margin: 0px;
+}
+.school{
+  font-size: 1.15em;
+}
+/*Specific to Projects*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+p{
+  text-align: left;
+}
+h1 {
+  text-align: center;
+}
+.carousel-indicators li{
+  background-color:   #e7e7e7;
+  border: solid 1px #e7e7e7;
+}
+.carousel{
+  max-width: 300px;
+  max-height: 230px;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+.carousel img{
+  height: auto;
+  width:100%;
+}
+.topic{
+  font-weight: 900;
+}
+.fa-chevron-left{
+  position: absolute;
+  left: 10%;
+}
+.fa-chevron-right{
+  position: absolute;
+  right: 10%;
+}
+/*Specific to Hire Me*/
+.center-me{
+  text-align: center;
+}
