@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">DJ Meyers</a>
+        <a class="navbar-brand" href="index.html">DJ Meyers</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -42,11 +42,11 @@
         <h1>What I've Done</h1>
       </div>
       <div class="col-lg-12 center-me">
-        <h2 id="website">Personal Website</h2>
+        <h2 id="website">Personal Website <small>March 2016</small></h2>
       </div>
       <div class="description row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="description">
+          <div class="description center-me">
             <div id="Car1" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#Car1" data-slide-to="0" class="active"></li>
@@ -79,14 +79,14 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <div class="description">
-            <p>This projects is my first foray into Web Development.  I constructed the website using skills I've learned in my Web Application Development Class and a number of youtube tutorials and stack overflow posts.  I spent some time looking up other Computer Scientists' personal websites for inspiration before starting.  After that, I familiarized myself with Bootstrap and practiced making simple layouts.  I then began to think about what I wanted on a personal website and planned my website around that.  I spent a weekend writing the code for the website that you see now.</p>
+            <p>This projects is my first foray into Web Development of any kind.  I constructed this website using skills I've learned in my Web Application Development Class and a number of youtube tutorials and stack overflow posts.  I spent some time looking up other Computer Scientists' personal websites for inspiration before starting.  After that, I familiarized myself with Bootstrap and practiced making simple layouts.  I then began to think about what I wanted on a personal website and planned my website around that.  I spent a weekend writing the code for the website that you see now.</p>
             <p><a href="https://github.com/DJ-Meyers/personal-website"><i class="fa fa-github-square fa-2x icon"></i> Check the code out!</a></p>
 
           </div>
         </div>
       </div>
       <div class="col-lg-12 center-me">
-        <h2 id="database">College Football Play-by-Play Database</h2>
+        <h2 id="database">College Football Play-by-Play Database <small>February 2016</small></h2>
       </div>
       <div class="description row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -123,13 +123,13 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <div class="description">
-            <p>This project is currently on hold while I focus on my classes;  I hope to resume work over the summer.  I made this as a follow-up to my College Football Ranking (below) because I wanted to get more stats to better evaluate a team's strengths and weaknesses.  With my Ranking algorithm, nearly everything was derived from the raw scores of the game.  After creating my algorithm, I wanted to make it predictive rather than descriptive so that I could try to make an educated guess about a future game based on statistics from past games.  In order to do this and be able to account for something like a player being injured, I needed Play-by-Play data to see, for example, what percent of offensive production a player contributed or compare him to the player replacing him.  I'm not sure how I'm going to store the data yet, as I'm currently only in the process of parsing data from the ESPN website.  I designed an XML format that would work, but I may use JSON format so that I can analyze the data easily using JQuery.  In order to parse the data, I used a GET request through Python's urllib2 library to retrieve the raw HTML of the Play-by-Play page.  From there, I've created a program that can parse the HTML, identify teams, player names, yards gained, yards to go, down, etc., store those values, and then output them in the XML format that I created.</p>
+            <p>This project is currently on hold while I focus on my classes;  I hope to resume working on it over the summer.  I made this as a follow-up to my College Football Ranking (below) because I wanted to get more detailed stats to better evaluate a team's strengths and weaknesses.  With my Ranking algorithm, nearly everything was derived from the raw scores of the game.  After creating my algorithm, I wanted to make it predictive rather than descriptive so that I could try to make an educated guess about a future game based on statistics from past games.  In order to do this, I needed Play-by-Play data to see, for example, what percent of offensive production a player contributed and how a team would change if he were unable to play in a game.  I'm not sure how I'm going to store the data yet, as I'm currently only in the process of parsing data from the ESPN website.  I designed an XML format that would work, but I may switch to JSON format because it seems easier to both write and parse.  In order to collect the data from ESPN's website, I used a GET request through Python's urllib2 library to retrieve the raw HTML of the Play-by-Play page.  From there, I've created a program that can parse the HTML, identify teams, player names, yards gained, yards to go, down, etc., store those values, and then output them in the format that I want to be queried later.</p>
             <p><a href="http://www.github.com/DJ-Meyers"><i class="fa fa-github-square fa-2x icon"></i> Check the code out when I eventually upload it to Github!</a></p>
           </div>
         </div>
       </div>
       <div class="col-lg-12 center-me">
-        <h2 id="ranking">College Football Rankings</h2>
+        <h2 id="ranking">College Football Rankings <small>October 2015</small></h2>
       </div>
       <div class="description row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -166,7 +166,7 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <div class="description">
-            <p>As someone who spends hours every weekend watching College Football, I love waking up the next day and seeing how polls have changed and how teams have moved up and down the rankings based on the results of the past weekend's games.  After UF's loss to LSU in 2015, I was curious how much the previously undefeated Gators would fall.  That's when I decided that instead of waiting, I wanted to create my own ranking system, since I always disagreed with official rankings anyways.  I began by finding a data collection that suited my needs: <a href="http://www.drwagpicks.com/p/blog-page.html">Dr. Greg Wagner's website</a> seemed to have all the information I wanted.  Basd on the CSV he uploaded every week, I wrote a C++ program that parses in the information from each game and stores it within an array of Game objects for both teams involved in the game.  From there I came up with my own philosophy of how a team should benefit and be penalized for wins and losses respectively.  I decided that a win should give ~100 points and a loss should take away ~40 points give or take based on the current rating of the opponent, the margin of victory, and conference that each team belonged to.  After I took this data, I created an algorithm that generated a score based on multipliers for each of the factors I chose.  This score is then modified every week so that the teams can then be ranked based on their scores.  My algorithm correctly picked out a controversial top 4 teams for the 2014 College Football Playoff after November 16th, 3 weeks before they decided.  This year it picked the top 4 teams correctly 3 weeks in advance again.  I'm hoping to expand the project to predict games based on the Play-by-Play data I'm collecting through the database project above.  I'm hoping to revisit this project and polish it up because it was written before I had a strong understanding of Databases or Data Structures.  I submit this poll every week to the <a href="http://reddit.com/r/CFB">reddit.com/r/CFB</a> Computer Poll every week.</p>
+            <p>As someone who spends hours every weekend watching College Football, I love waking up the next day and seeing how polls have changed and how teams have moved up and down the rankings based on the results of the past weekend's games.  After UF's loss to LSU in 2015, I was curious how much the previously undefeated Gators would fall.  That's when I decided that instead of waiting, I wanted to create my own ranking system, since I always disagreed with official rankings anyways.  I began by finding a data collection that suited my needs: <a href="http://www.drwagpicks.com/p/blog-page.html">Dr. Greg Wagner's website</a> seemed to have all the information I wanted.  Basd on the CSV he uploaded every week, I wrote a C++ program that reads in the information from each game and stores it within an array of Game objects for both teams involved in the game.  From there I came up with my own philosophy of how a team should benefit and be penalized for wins and losses respectively.  I decided that a win should give ~100 points and a loss should take away ~40 points give or take based on the current rating of the opponent, the margin of victory, and conference that each team belonged to.  After I took this data, I created an algorithm that generated a score based on multipliers for each of the factors I chose.  This score is then modified every week so that the teams can then be ranked based on their scores.  My algorithm correctly picked out a controversial top 4 teams for the 2014 College Football Playoff after November 16th, 3 weeks before they decided.  This year it picked the top 4 teams correctly 3 weeks in advance again.  I'm hoping to expand the project to predict games based on the Play-by-Play data I'm collecting through the database project above.  I'm hoping to revisit this project and polish it up because it was written before I had a strong understanding of Databases or Data Structures.  I submit this poll every week to the <a href="http://reddit.com/r/CFB">reddit.com/r/CFB</a> Computer Poll every week.</p>
             <p><a href="http://www.github.com/DJ-Meyers"><i class="fa fa-github-square fa-2x icon"></i> Check the code out when I eventually upload it to Github!</a></p>
           </div>
         </div>
